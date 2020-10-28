@@ -1,0 +1,98 @@
+html, body {
+    color: white;
+    /* background-image: url(../../assets/img/nwall.jpg); */
+    background-color: #202020;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;
+    height: 100%;
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+#myPhoto {
+    filter: grayscale();
+}
+#myPhoto:hover {
+    /* animation: bounce 1s     ; */
+    filter: contrast();
+    transition-delay: 500ms;
+}
+.list-group-item:hover {
+    /* animation: tada 1s; */
+}
+.nav-item:hover,
+h2:hover {
+    animation: jello 1s infinite ;
+}
+.navbar-brand:hover {
+    animation: tada 1s;
+}
+#navbarContent .active a{
+    color: #DD1717 !important;
+    font-weight: bold;
+    background-color:#202020 !important;
+    border: none;
+}
+
+.bgSha {
+    color: #15151580;
+}
+.bgGrey {
+    background-color:#202020;
+    box-shadow: 2px 2px 2px 1px black;
+}
+.bgGreyNoS {
+    background-color: #202020 !important;
+}
+.thPlaceHolder {
+    background-color: #303030;
+}
+
+.thTitle, h2, #about a, a:hover, .firm {
+    color: #DD1717!important;
+}
+.bgBtn {
+    background-color: #DD1717;
+}
+.thTxtGrey {
+    color: #808080;
+}
+
+/* footer */
+#footer{
+    position: fixed;
+    bottom: 0;
+    height: 140px;
+    background-color:#15151580;
+    box-shadow: 2px -2px 2px 1px black;
+}
+
+.thGreyTitle, .date {
+    color: #808080;
+}
+#aboutText p {
+    font-size: 3rem;
+}
+#salut {
+     font-size: 5rem !important;
+     
+ }
+#febe {
+    font-size: 1rem !important;
+}
+#webdev {
+    font-size: 4rem !important;
+}
+ p {
+     margin: 0;
+ }
+
+ /* #experList li:hover {
+    animation: tada;
+    animation-iteration-count: 1;
+ } */
+
+li:hover {
+     animation: tada;
+ }

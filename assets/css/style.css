@@ -10,6 +10,14 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 
+
+
+.heading {
+  @include text-hide;
+}
+
+
+
 #myPhoto {
     filter: grayscale();
 }

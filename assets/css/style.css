@@ -10,6 +10,10 @@ html, body {
     font-family: 'Oswald', sans-serif;
 }
 
+h5 {
+    font-size: 25px;
+}
+
 .myLogo {
     width: auto;
     height: 35px;
@@ -58,9 +62,9 @@ h2:hover {
 .bgSha {
     color: #15151580;
 }
-.bgGrey {
-    background-color:#202020;
-    box-shadow: 2px 2px 2px 1px black;
+.bgTh {
+    background-color: rgba(25,25,25,0.8);
+    border-radius: 5px;
 }
 .bgGreyNoS {
     background-color: #202020 !important;
@@ -86,7 +90,21 @@ h2:hover {
     font-size: 25px;
 }
 .firm {
-    color: #909090;
+    color: rgb(180, 30, 30);
+    font-weight: bold;
+}
+
+.thLyLogo {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+
+.thHover {
+    opacity: 0;
+}
+.thHover:hover {
+    opacity: 1;
 }
 
 .thGreyTitl{
@@ -123,7 +141,7 @@ h2:hover {
     position: absolute;
     bottom:12px;
     border-radius: 5px;
-    background-color: red;
+    background-color: rgb(190, 22, 22);
     height: 4px;
     width: 70%;
  }

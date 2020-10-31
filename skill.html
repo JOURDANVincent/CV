@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/mdb.css">
-    <link rel="stylesheet" href="@@path/vendor/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/css/circle.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/navBar.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <!-- Bar de navigation responsive -->
         <div class="row">
         
-            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-5">
+            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-3">
                 <a class="col-2 col-lg-2 navbar-brand " href="index.html"><img class="myLogo" src="assets/Logo/JDN-Logo.png" alt="Mon JDN-V logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -45,74 +45,110 @@
 
         </div>
 
-        <div class="row justify-content-md-center">
+        <div class="row d-flex-row align-items-center justify-content-center ">
 
             <!-- section compétences profressionnelles -->
-            <div class="col-12 col-lg-5 card border-0 bg-dark animated slideInLeft delay-2s">
-                <div class="card-title mb-0"><h5 class="text-white">Compétences Professionnelles</h5></div>
-                <div class="card-body">
-                    <ul class="list-group w-md-50 mt-0">
-                        <li class="list-group-item" id="html" >HTML
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="css" >CSS
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="php" >PHP
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:2%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="bootstrap" >BOOTSTRAP<div class="progress">
-                            <div class="progress-bar bgBtn" style="width:10%"></div>
-                        </div>
-                    </ul>
+            <div class="col-12 col-lg-10 text-center text-lg-left mt-3 mb-3">
+                <h5 class="text-white">Compétences Professionnelles</h5>
+            </div>
+            <div class="col-10 col-lg-8 d-flex flex-wrap text-center justify-content-center justify-content-around align-items-center">
+                <div class="c100 p2 dark border-dark">
+                    <span><img src="assets/Logo/html-5.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p2 dark border-dark">
+                    <span><img src="assets/Logo/css-3.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/java-script.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/bootstrap.svg" height="60" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
                 </div>
             </div>
+            <div class="col-12 col-lg-8 pl-0 text-center d-none d-lg-flex thLyLogo justify-content-around ">
+                <div class="col-lg-3 text-center" title="HTML5">HTML5</div>
+                <div class="col-lg-3 text-center">CSS3</div>
+                <div class="col-lg-3 text-center">JS</div>
+                <div class="col-lg-3 text-center">BOOTSTRAP</div>
+            </div>
+            
             
             <!-- section compétecnes personnelles -->
-            <div class="col-12 col-lg-5 card border-0 bg-dark animated slideInRight delay-1s">
-                <div class="card-title mb-0"><h5 class="text-white">Compétences Personnelles</h5></div>
-                <div class="card-body align-content-center justify-content-center">
-                    <ul class="d-bloc list-group w-md-50 mt-0">
-                        <li class="list-group-item" id="python" >PYTHON
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:40%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="js" >JAVA SCRIPT
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:10%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="nodered" >NODE RED
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="gtk" >GTK 3
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:35%"></div>
-                            </div>
-                        </li>   
-                    </ul>
+            <div class="col-12 col-lg-10 text-center text-lg-left mt-4 mb-3">
+                <h5 class="text-white">Compétences Personnelles</h5>
+            </div>
+
+            <div class="col-10 col-lg-8 d-flex flex-wrap text-center justify-content-center justify-content-around align-items-center">
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/python.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+    
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/ubuntu-logo.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+    
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/android-character-symbol.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+    
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/nodejs-seeklogo.com.svg" height="70" alt="NSP"></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
                 </div>
             </div>
+
+            <div class="col-12 col-lg-8 pl-0 text-center d-none d-lg-flex thLyLogo justify-content-around">
+                <div class="col-lg-3 text-center">PYTHON</div>
+                <div class="col-lg-3 text-center">UBUNTU</div>
+                <div class="col-lg-3 text-center">ANDROID</div>
+                <div class="col-lg-3 text-center">NODE-JS</div>
+            </div>
+            
             
             <!-- section formations -->
-            <div class="col-12 col-lg-10 card bg-dark border-0 mt-5"> 
+            <div class="col-12 col-lg-10 card bg-dark border-0 mt-lg-3 mt-4 mb-5"> 
                 <div class="card-title">
-                    <h5 class="mb-0">Formations</h5>
+                    <h5 class="text-center text-lg-left mb-2">Formations</h5>
                 </div>
-                <div class="card-body">
-                    <ul class="list-group text-center">
-                        <li class="list-group-item"><span class="thTitle formName">DWWM </span class="text-center">Développeur Web & Web Mobile<span class="thTxtGrey formPlace"> La MANU AMIENS</span></li>
-                        <li class="list-group-item"><span class="thTitle formName">BTS MAI </span>Mécanique & Automatisme<span class="thTxtGrey formPlace"> Industriel CFAI Somme AMIENS</span></li>
-                        <li class="list-group-item"><span class="thTitle formName">BAC STI GET </span>Génie En Electrotechnique<span class="thTxtGrey formPlace"> Edouard Branly AMIENS</span></li>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item ">DWWM <span class="thTxtGrey" >Développeur Web & Web Mobile</span><span class="firm">  La MANU   AMIENS</span><br> <span 
+                            class="date">2018-2020</span></li>
+                        <li class="list-group-item ">BTS MAI <span class="thTxtGrey">Mécanique & Automatisme Industrielle</span><span class="firm">  CFAI Somme & VALEO   AMIENS</span><br> <span 
+                            class="date">2018-2020</span></li>
+                        <li class="list-group-item ">Bas STI GET <span class="thTxtGrey">Génie En Électrotechnique</span><span class="firm">  Lycée Edouard Branly   AMIENS</span><br> <span 
+                            class="date">2018-2020</span></li>
                     </ul>
                 </div>
                 

@@ -7,9 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/mdb.css">
-    <link rel="stylesheet" href="@@path/vendor/jqvmap/dist/jqvmap.min.css">
+    <link rel="stylesheet" href="assets/css/circle.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/navBar.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>JOURDAN Vincent - Web développeur /AMIENS/CS/Compétences & Formations</title>
 
@@ -17,12 +16,12 @@
 
 <body>
 
-    <div class="container-fluid h-100 overflow-auto">
+    <div class="container-fluid overflow-auto">
 
         <!-- Bar de navigation responsive -->
         <div class="row">
         
-            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-5">
+            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-3 mb-lg-5">
                 <a class="col-2 col-lg-2 navbar-brand " href="index.html"><img class="myLogo" src="assets/Logo/JDN-Logo.png" alt="Mon JDN-V logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -45,66 +44,83 @@
 
         </div>
 
-        <div class="row justify-content-md-center">
+        <div class="row h-lg-75 justify-content-around m-0 p-0">
 
             <!-- section compétences profressionnelles -->
-            <div class="col-12 col-lg-5 card border-0 bg-dark animated slideInLeft delay-2s">
-                <div class="card-title mb-0"><h5 class="text-white">Compétences Professionnelles</h5></div>
-                <div class="card-body">
-                    <ul class="list-group w-md-50 mt-0">
-                        <li class="list-group-item" id="html" >HTML
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="css" >CSS
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="php" >PHP
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:2%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="bootstrap" >BOOTSTRAP<div class="progress">
-                            <div class="progress-bar bgBtn" style="width:10%"></div>
-                        </div>
-                    </ul>
+            <div class="align-items-center clearfix p-0">
+                <div class="col-12 col-lg-12 text-center align-items-center justify-content-center">
+                    <h5 class="text-white">Compétences Professionnelles</h5>
+                </div>
+                <div class="c100 p2 dark border-dark">
+                    <span><img src="assets/Logo/html-5.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/css-3.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/java-script.svg" height="70" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
+                </div>
+                <div class="c100 p80 dark border-dark">
+                    <span><img src="assets/Logo/bootstrap.svg" height="60" alt=""></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill border-white"></div>
+                    </div>
                 </div>
             </div>
             
             <!-- section compétecnes personnelles -->
-            <div class="col-12 col-lg-5 card border-0 bg-dark animated slideInRight delay-1s">
-                <div class="card-title mb-0"><h5 class="text-white">Compétences Personnelles</h5></div>
-                <div class="card-body align-content-center justify-content-center">
-                    <ul class="d-bloc list-group w-md-50 mt-0">
-                        <li class="list-group-item" id="python" >PYTHON
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:40%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="js" >JAVA SCRIPT
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:10%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="nodered" >NODE RED
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:30%"></div>
-                            </div>
-                        </li>
-                        <li class="list-group-item" id="gtk" >GTK 3
-                            <div class="progress">
-                                <div class="progress-bar bgBtn" style="width:35%"></div>
-                            </div>
-                        </li>   
-                    </ul>
-                </div>
+            <div class="align-items-center clearfix p-0">
+                <div class="col-12 col-lg-12 text-center"><h5 class="text-white">Compétences Personnelles</h5></div>
+    
+                    <div class="c100 p80 dark border-dark">
+                        <span><img src="assets/Logo/python.svg" height="70" alt=""></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill border-white"></div>
+                        </div>
+                    </div>
+
+                    <div class="c100 p80 dark border-dark">
+                        <span><img src="assets/Logo/ubuntu-logo.svg" height="70" alt=""></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill border-white"></div>
+                        </div>
+                    </div>
+
+                    <div class="c100 p80 dark border-dark">
+                        <span><img src="assets/Logo/android-character-symbol.svg" height="70" alt=""></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill border-white"></div>
+                        </div>
+                    </div>
+
+                    <div class="c100 p80 dark border-dark">
+                        <span><img src="assets/Logo/nodejs-seeklogo.com.svg" height="70" alt="NSP"></span>
+                        <div class="slice">
+                            <div class="bar"></div>
+                            <div class="fill border-white"></div>
+                        </div>
+                    </div>
+            
             </div>
             
             <!-- section formations -->
-            <div class="col-12 col-lg-10 card bg-dark border-0 mt-5"> 
+            <div class="col-12 col-md-10 card bg-dark border-0 mt-5"> 
                 <div class="card-title">
                     <h5 class="mb-0">Formations</h5>
                 </div>
@@ -118,25 +134,9 @@
                 
             </div>
 
-
-
         </div>
         
-
-        
-
-
-
-
     </div>
-
-    
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

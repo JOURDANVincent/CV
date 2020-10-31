@@ -16,62 +16,51 @@
 
 <body>
 
-  <div class="container-fluid h-100 overflow-auto animated slideInRight">
-
-    <!-- Bar de navigation responsive -->
+  <!-- Header -->
+  <div class="container-fluid h-100 overflow-auto">
     <div class="row">
-      
-      <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-2 mb-lg-5">
-        <a class="col-2 col-lg-2 navbar-brand " href="index.html"><img class="myLogo" src="assets/Logo/JDN-Logo.png" alt="Mon JDN-V logo"></a>
+      <!-- Bar de navigation responsive -->
+      <nav id="navBar" class="col-12 navbar navbar-expand-lg navbar-dark bgSha mt-1 mb-5 animated slideInRight">
+        <a class="navbar-brand " href="index.html">JDN-V</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div id="navbarContent" class="collapse navbar-collapse justify-content-lg-between">
-          <ul class="col-12 col-lg-10 navbar-nav justify-content-lg-center text-center">
+        <div id="navbarContent" class="collapse navbar-collapse text-center justify-content-lg-between">
+          <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link" href="skill.html">Compétences / Formations</a></li>
             <li class="nav-item"><a class="nav-link" href="experience.html">Expériences</a></li>
             <li class="nav-item"><a class="nav-link" href="project.html">Projet</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           </ul>
-          <ul  class="col-lg-2 pr-lg-0 flex-row justify-content-center navbar-nav">
+          <ul  class="navbar-nav flex-row justify-content-center">
             <li class="nav-item"><a class="nav-link" href="https://github.com/JOURDANVincent" target="_blank"><img class="animated bounce delay-2s" src="assets/img/github.svg" alt="github"></a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/vincent-jourdan-99902015a/" target="_blank"><img class="animated bounce delay-3s" src="assets/img/linkedin.svg" alt="linkedin"></a></li>
             <li class="nav-item"><a class="nav-link" href="#about" target="_blank"><img class="animated bounce delay-4s" src="assets/img/discord.svg" alt="discord"></a></li>
           </ul>
         </div>
       </nav>
-
     </div>
   
     <!-- Section About en page de garde -->
-    <div class="row h-75 align-items-center">
-
-      <div id="aboutText" class="col-12 col-lg-5 pl-lg-5 ml-lg-5 float-right">
-        <div class="col-12 text-center">
-          <p class="animated jello delay-2s float-lg-left" id="salut">Salut !</p>
-          <p class=" float-lg-left">Moi c'est Vincent</p>
-        </div>
-        <div class="col-12 mt-lg-4 text-center">
-          <h2 id="webdev" class="thTitle float-lg-left">Web développeur</h2>
-        </div>
-        <div class="col-12 col-lg-10 text-center float-lg-left">
-          <p class="thGreyTitle mb-lg-3">[ en devenir ]</p>
+    <div class="row h-75 align-items-center justify-content-center">
+      <div id="about" class="col col-md-4 text-center animated slideInRight overflow-hidden">
+        <div id="aboutText" class="text-md-left mx-auto align-item-center">
+          <p class="animated jello delay-2s" id="salut">Salut !</p>
+          <p >Moi c'est Vincent</p>
+          <h2 id="webdev" class="thTitle">Web développeur</h2>
+          <p class="thGreyTitle ml-5 mb-3">[ en devenir ]</p>
           <p id="febe">Front end / Back end and more..</p>
-        </div>
-        <div class="col-12 col-lg-10 float-lg-left align-items-lg-center text-center mt-4 mb-4 mt-lg-4">
-          <a class="btn font-weight-bold btn-outline-red" href="contact.html">Contactez Moi</a>
+          <div class="col text-center mt-5 py-auto mt-5 mb-5"><a class="btn thTitle font-weight-bold" href="contact.html">Contactez Moi</a></div>   
         </div>
       </div>
-    
-      <div class="col-12 col-lg-6 p-lg-5 text-center py-auto">
-        <img id="myPhoto" class="img-fluid shadow" src="assets/img/MaPhoto.jpg" alt="Ma photo">
-      </div>
-     
+      <div class="col-12 col-md-5 mb-4"><img id="myPhoto" class="img-fluid shadow animated slideInRight" src="assets/img/MaPhoto.jpg" alt="Ma photo"></div>
     </div>
     
-    
   </div> 
+
+  
+zzz
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -82,6 +71,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
   </script>
+
+
 
 </body>
 

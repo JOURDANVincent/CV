@@ -11,7 +11,14 @@ html, body {
 }
 
 h5 {
-    font-size: 25px;
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+}
+a {
+    color: grey;
 }
 
 .myLogo {
@@ -43,9 +50,9 @@ h2:hover {
 }
 
 .nav-link {
-    font-size: 22px;
+    font-size: 18px;
 }
-#navbarContent .active a{
+#navbarContent .active .nav-link{
     color: #DD1717 !important;
     font-weight: bold;
     background-color:#202020 !important;
@@ -66,11 +73,11 @@ h2:hover {
     background-color: rgba(25,25,25,0.8);
     border-radius: 5px;
 }
+.txtThOp {
+    color: #202020;
+}
 .bgGreyNoS {
     background-color: #202020 !important;
-}
-.thPlaceHolder {
-    background-color: #303030;
 }
 
 .thTitle, h2, #about a, a:hover {
@@ -87,7 +94,7 @@ h2:hover {
 .date {
     color: black;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 .firm {
     color: rgb(180, 30, 30);
@@ -95,7 +102,7 @@ h2:hover {
 }
 
 .thLyLogo {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     color: black;
 }
@@ -123,9 +130,7 @@ h2:hover {
 #webdev {
     font-size: 4rem !important;
 }
- p {
-     margin: 0;
- }
+
 
  .pgBar {
     position: relative;

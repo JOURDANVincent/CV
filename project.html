@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="container-fluid h-100 overflow-auto">
+    <div class="container-fluid h-100 overflow-auto align-items-center">
 
         <!-- Bar de navigation responsive -->
         <div class="row">
@@ -53,7 +53,7 @@
             <div class="col-11 col-lg-7 bgTh pt-3 py-lg-4 px-lg-5">
                 <img class="img-fluid" src="assets/img/VSPROD.png" alt="VSPROD image de page de garde du site"/>
                 <div class="text-center mt-2">
-                    <a class="stretched-link d-none d-lg-flex ml-lg-4" target="_blank" href="https://jourdanvincent.github.io/VSPROD/">Lien : VSPROD Label des indépendants (PS: Suivez ce lien uniquement depuis un PC ...MDR)</a>       
+                    <a class="stretched-link d-none d-lg-flex" target="_blank" href="https://jourdanvincent.github.io/VSPROD/">Lien : VSPROD Label des indépendants (PS: Suivez ce lien uniquement depuis un PC ...MDR)</a>       
                 </div>    
             </div> 
             <div class="col-11 col-lg-3 bgTh py-3 py-lg-5 px-lg-3 align-items-lg-center">
@@ -72,7 +72,20 @@
     </div>
 
 
-
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("navBar").style.height = "0";
+            
+          } else {
+            document.getElementById("navBar").style.height = "50px";
+          }
+        }
+    </script>
+        
 
 
 

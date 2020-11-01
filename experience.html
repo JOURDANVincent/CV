@@ -21,7 +21,7 @@
         <!-- Bar de navigation responsive -->
         <div class="row">
         
-            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-4 mb-lg-5">
+            <nav id="navBar" class="col navbar navbar-expand-lg navbar-dark bgSha mb-4 mb-lg-5 fixed-top">
                 <a class="col-2 col-lg-2 navbar-brand " href="index.html"><img class="myLogo" src="assets/Logo/JDN-Logo.png" alt="Mon JDN-V logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                 <span class="navbar-toggler-icon"></span>
@@ -75,18 +75,7 @@
 
         </div>
 
-
-
-
-
-
-
     </div>
-
-
-
-
-
 
 
 
@@ -101,7 +90,20 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
 
-
+<script>
+    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navBar").style.backgroundColor = "white";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navBar").style.backgroundColor = "black";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+    </script>
 
 </body>
 

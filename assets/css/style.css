@@ -41,6 +41,7 @@ hr {
 
 #myPhoto {
     filter: grayscale();
+    border-radius: 5px;
 }
 #myPhoto:hover {
     /* animation: bounce 1s     ; */
@@ -73,7 +74,6 @@ h2:hover {
     background-color: rgba(25,25,25,0.8);
     border-radius: 5px;
     /* box-shadow: 2px 2px 2px 1px rgb(90, 25, 25); */
-
     margin-bottom: 5px;
 }
 
@@ -109,8 +109,9 @@ h2:hover {
     font-size: 20px;
 }
 .firm {
-    color: rgb(180, 30, 30);
+    color: rgb(211, 59, 59);
     font-weight: bold;
+    /* margin-left: 5px; */
 }
 
 .thLyLogo {
@@ -140,7 +141,7 @@ h2:hover {
     font-size: 1rem !important;
 }
 #webdev {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
 }
 
 
@@ -157,6 +158,7 @@ h2:hover {
  .pgProgress {
     position: absolute;
     bottom:12px;
+    left: 21px;
     border-radius: 5px;
     background-color: rgb(190, 22, 22);
     height: 4px;

@@ -2,9 +2,14 @@ html, body {
     color: white;
     /* background-image: url(../../assets/img/nwall.jpg); */
     background-color: #202020;
+    /* background-image: url(../img/Globe_icon_4.svg); */
     background-attachment: fixed;
-    background-size: cover;
-    background-position-x: center;
+    background-repeat: no-repeat;
+
+    /* background-size: cover; */
+    background-position-x: 95%;
+    background-position-y: 75%;
+    background-size: 50%;
     height: 100%;
     width: 100%;
     font-family: 'Oswald', sans-serif;
@@ -77,6 +82,9 @@ h2:hover {
     margin-bottom: 5px;
 }
 
+.bdc5 {
+    border: 1px solid #808080aa;
+}
 
 .bgSha {
     color: #15151580;

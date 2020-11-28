@@ -8,14 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/mdb.css">
+    
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/upPageBtn.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>JOURDAN Vincent - Web développeur /AMIENS/CS/Expériences</title>
 
 </head>
 
-<body>
+<body id="upPage" onscroll="showArrow();">
 
     <div class="container-fluid h-100 overflow-auto">
 
@@ -29,8 +31,8 @@
                 </button>
                 <div id="navbarContent" class="col-lg-11 collapse navbar-collapse justify-content-lg-between">
                     <ul class="col-12 col-lg-10 navbar-nav justify-content-lg-center text-center">
-                        <li class="nav-item"><a class="nav-link" href="skill.html">Compétences / Formations</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="experience.html">Expériences</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skill.html">Compétences</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="experience.html">Formations / Expériences</a></li>
                         <li class="nav-item"><a class="nav-link" href="project.html">Projet</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -45,45 +47,106 @@
 
         </div>
 
-        <div class="row h-75 pr-0 align-items-center animated fadeInUp">
+        <div class="row px-0 align-items-center animated fadeInUp justify-content-center">
+
+            <!-- section formations -->
+            <div class="col-12 col-lg-10 px-lg-0 mb-4"> 
+
+                <h5 class="text-center text-lg-left ml-lg-4 px-0 mb-3">Formations</h5>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item">DWWM <span class="thTxtGrey ml-1" >Développeur Web & Web Mobile</span><br><span class="firm">  La MANU   AMIENS</span><br> <span 
+                            class="date">2020-2021</span></li>
+                        <li class="list-group-item">BTS MAI <span class="thTxtGrey ml-1">Mécanique & Automatisme Industrielle</span><br><span class="firm">  CFAI Somme & VALEO   AMIENS</span><br> <span 
+                            class="date">2018-2020</span></li>
+                        <li class="list-group-item">Bas STI GET <span class="thTxtGrey ml-1">Génie En Électrotechnique</span><br><span class="firm">  Lycée Edouard Branly   AMIENS</span><br> <span 
+                            class="date">2018-2020</span></li>
+                    </ul>
+                </div>
+                
+            </div>
 
             <!-- Section Expriences -->
-            <div class="col pr-0 d-flex flex-wrap justify-content-center">
-                <h5 class="col-12 col-lg-10 mb-4">Expériences</h5>
-                <ul class="col-12 col-lg-5 list-group text-left mb-3 mb-lg-5">
-                    <li class="list-group-item ">Technico-Comercial <span class="firm ml-1">TECHNIQUES & INDUSTRIES</span><br> <span 
-                            class="date">2018-2020</span></li>
-                    <li class="list-group-item ">Technicien SAV/CE <span class="firm ml-1">MULTIVAC</span><br> <span
-                            class="date">2013-2018</span></li>
-                    <li class="list-group-item ">Technicien de Maintenance <span class="firm ml-1">PPG</span><br> <span
-                            class="date">2013</span></li>
-                    <li class="list-group-item ">Technicien de Maintenance <span class="firm ml-1">NEXANS</span><br> <span
-                            class="date">2011-2012</span></li>
-                    <li class="list-group-item ">Technicien de Maintenance <span class="firm ml-1">VIRBAC</span><br> <span
-                            class="date">2011</span></li>
-                </ul>
+            <div class="col-12 col-lg-10 px-lg-0 mb-4">
+                <h5 class="text-center text-lg-left ml-lg-4 px-0 mb-3">Expériences</h5>
 
-                <ul class="col-12 col-lg-5 list-group text-left mb-3 mb-lg-5">
-                    <li class="list-group-item ">Technicien de Maintenance <span class="firm ml-1">RACLOT</span><br> <span
-                        class="date">2008-2010</span></li>
-                    <li class="list-group-item ">Electromécanicien <span class="firm ml-1">EMIN LEYDIER</span><br> <span
-                            class="date">2008</span></li>
-                    <li class="list-group-item ">Electricien secteur B1/B2 <span class="firm ml-1">DUNLOP</span><br> <span
-                            class="date">2006-2007</span></li>
-                    <li class="list-group-item ">Mécanicien secteur FARM <span class="firm ml-1">GOODYEAR</span><br> <span
-                            class="date">2006</span></li>
-                    <li class="list-group-item ">Ajusteur / Monteur <span class="firm ml-1">AIRBUS</span><br> <span
-                            class="date">2005</span></li>
-                </ul>        
+                <div class="row pl-3">
+
+                    <ul class="list-group col-12 col-lg-6">
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp1">
+                            <div class="d-inline"><span>Technico-Commercial</span></div><span class="firm ml-2 pr-0">TECHNIQUES & INDUSTRIES</span>
+                            <div class="date">2018-2020<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li> 
+                        <p id="exp1" class="list-group-item bdc5 thTxtGrey collapse">Accueil client magasin, Devis client, Recherche client et partenariat, Assemblage pompe de forage, Paramétrage / Mise en service et SAV variateur de vitesse, Développement projet objet connecté : Commande à distance d’un variateur de vitesse par sms et/ou data via raspberry (code python sur raspberry et utilisation node red, application android SMS) </p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp2">
+                            <div class="d-inline"><span>Technicien SAV/CE</span></div><span class="firm ml-2">MULTIVAC</span>
+                            <div class="date">2013-2018<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li> 
+                        <p id="exp2" class="list-group-item bdc5 thTxtGrey collapse">Entretien préventif et curatif du parc machine confié (Entretien, dépannage, amélioration et rétrofit, devis pièces, TPM et PDM, visite client, assistance téléphonique)</p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp3">
+                            <div class="d-inline"><span>Technicien de Maintenance</span></div><span class="firm ml-2">PPG</span>
+                            <div class="date">2013<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li> 
+                        <p id="exp3" class="list-group-item bdc5 thTxtGrey collapse">Dépannage en électricité et automatisme (machine et réseau automate) et petits travaux neufs (coffrets électriques, remise à niveau, programmation automate)</p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp4">
+                            <div class="d-inline"><span>Technicien de Maintenance</span></div><span class="firm ml-2">NEXANS</span>
+                            <div class="date">2011-2012<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li> 
+                        <p id="exp4" class="list-group-item bdc5 thTxtGrey collapse">Dépannage en électricité, remise à niveau, automatisation et amélioration du parc</p>  
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp5">
+                            <div class="d-inline"><span>Technicien de Maintenance</span></div><span class="firm ml-2">VIRBAC</span>
+                            <div class="date">2011<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp5" class="list-group-item bdc5 thTxtGrey collapse"> Entretien et Dépannage des installations de production </p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp6">
+                            <div class="d-inline"><span>Technicien de Maintenance</span></div><span class="firm ml-2">RACLOT</span>
+                            <div class="date">2008-2010<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp6" class="list-group-item bdc5 thTxtGrey collapse">Entretien et dépannage du site complet, conduite de chaufferie, devis, gestion des stocks </p>
+                    </ul>
+                    <ul class="list-group col-12 col-lg-6">
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp7">
+                            <div class="d-inline"><span>Electromécanicien</span></div><span class="firm ml-2">EMIN LEYDIER</span>
+                            <div class="date">2008<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp7" class="list-group-item bdc5 thTxtGrey collapse">Entretien et Dépannage installations électriques et mécaniques </p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp8">
+                            <div class="d-inline"><span>Electricien/Automaticien</span></div><span class="firm ml-2">NESTLE PURINA</span>
+                            <div class="date">2007<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp8" class="list-group-item bdc5 thTxtGrey collapse">Intervenant sur lignes automatisées d’ensachage ou de mise en boîte des produits</p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp9">
+                            <div class="d-inline"><span>Electricien secteur B1/B2</span></div><span class="firm ml-2">DUNLOP</span>
+                            <div class="date">2006-2007<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp9" class="list-group-item bdc5 thTxtGrey collapse">Intervenant en électricité et automatisme sur lignes de confection/cuisson/contrôle</p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp10">
+                            <div class="d-inline"><span>Mécanicien secteur FARM</span></div><span class="firm ml-2">GOODYEAR</span>
+                            <div class="date">2006<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp10" class="list-group-item bdc5 thTxtGrey collapse">Entretien mécanique des presses de cuisson des pneus agraires </p>
+                        <li class="list-group-item pr-0" data-toggle="collapse" data-target="#exp11">
+                            <div class="d-inline"><span>Ajusteur/Monteur</span></div><span class="firm ml-2">AIRBUS</span>
+                            <div class="date">2005<span class="dropdown-toggle float-right mr-3"></span></div>
+                        </li>
+                        <p id="exp11" class="list-group-item bdc5 thTxtGrey collapse">Mécanicien monteur ajusteur secteur finition sur Airbus A320/321
+                        </p>
+
+                    </ul>
+                </div>
+                       
             </div>
-               
-            
 
         </div>
 
+
     </div>
 
-
+    <!------------------------------------------------- Bouton pour remonter en haut de page -------------------------------------------->
+    <div>
+        <a id="btnToUpPage" class="btnHide" href="#upPage"></a>
+    </div>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -96,6 +159,8 @@
         integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
     </script>
 
+    <!-- Mes scripts -->
+    <script src="assets/js/upPageBtn.js"></script>
 
 
 </body>

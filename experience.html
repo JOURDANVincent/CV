@@ -8,18 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/mdb.css">
-    
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/upPageBtn.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>JOURDAN Vincent - Web développeur /AMIENS/CS/Expériences</title>
 
 </head>
 
-<body id="upPage" onscroll="showArrow();">
+<body id="upPage" class="h-100" onscroll="showArrow();">
 
-    <div class="container-fluid h-100 overflow-auto">
+    <div class="container-fluid overflow-auto"   >
 
         <!-- Bar de navigation responsive -->
         <div class="row justify-content-center">
@@ -34,7 +33,8 @@
                         <li class="nav-item"><a class="nav-link" href="skill.html">Compétences</a></li>
                         <li class="nav-item active"><a class="nav-link" href="experience.html">Formations / Expériences</a></li>
                         <li class="nav-item"><a class="nav-link" href="project.html">Projet</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A propos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cvitae.html">CV</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                     <ul  class="col-lg-1 flex-row justify-content-center navbar-nav">
@@ -134,19 +134,25 @@
 
                     </ul>
                 </div>
+
+                
                        
             </div>
 
+            
+
+        </div>
+
+        <!------------------------------------------------- Bouton pour remonter en haut de page -------------------------------------------->
+        <div>
+            <a id="btnToUpPage" class="btnHide" href="#upPage"></a>
         </div>
 
 
     </div>
 
-    <!------------------------------------------------- Bouton pour remonter en haut de page -------------------------------------------->
-    <div>
-        <a id="btnToUpPage" class="btnHide" href="#upPage"></a>
-    </div>
     
+        
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

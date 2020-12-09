@@ -22,6 +22,16 @@ h5 {
 p {
     margin: 0;
 }
+
+#experience p .collapse {
+    opacity: 1;
+    transition: all 1s ease-out;
+}
+#experience p .show {
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
 a {
     color: grey;
 }

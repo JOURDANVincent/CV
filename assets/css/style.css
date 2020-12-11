@@ -23,6 +23,15 @@ p {
     margin: 0;
 }
 
+.bg1 {
+    background-color: #00000022;
+    backdrop-filter: blur(8px);
+}
+
+.bdc1 {
+    border: 1px solid #808080;
+}
+
 #experience p .collapse {
     opacity: 1;
     transition: all 1s ease-out;

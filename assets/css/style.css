@@ -182,3 +182,41 @@ h2:hover {
     height: 4px;
     width: 70%;
  }
+
+
+
+ /* SLIDER */
+
+.manSlider-items {
+    /* display: flex; */
+    overflow-x: scroll;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.manSlider-items li {
+    list-style-type: none !important;
+}
+
+.manSlider-item {
+    flex: 1 0 350px;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 5px;
+    scroll-snap-align: start;
+}
+
+.manSlider-items::-webkit-scrollbar-track {
+    background-color: #202020;
+}
+
+.manSlider-items::-webkit-scrollbar {
+    height: 6px;
+    background-color: #202020;
+}
+
+.manSlider-items::-webkit-scrollbar-thumb {
+    background-color: rgba(190, 22, 22,5);
+    width: 10px;
+    border-radius: 3px;
+}

@@ -64,7 +64,8 @@ hr {
 
 
 #myPhoto {
-    filter: grayscale();
+    max-height: 260px !important;
+    backdrop-filter: blur(8px);
     border-radius: 5px;
 }
 #myPhoto:hover {
